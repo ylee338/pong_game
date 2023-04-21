@@ -1,5 +1,6 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
 import time
 
 
@@ -9,6 +10,7 @@ screen.title("Pong Game")
 screen.setup(700, 700)
 screen.tracer(0)
 paddle = Paddle()
+ball = Ball()
 
 screen.listen()
 screen.onkey(fun=paddle.right_up, key='Up')
@@ -23,6 +25,7 @@ is_playing = True
 while is_playing:
     screen.update()
     time.sleep(0.1)
+    ball.move()
 
 
 
