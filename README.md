@@ -1,3 +1,3 @@
 # Classic Pong Game
 
-The classic pong game everyone grew up playing with.
+A two-player classic pong game everyone grew up playing with.
